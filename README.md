@@ -17,14 +17,10 @@ python -m pip install -r requirements.txt
 
 To start training, run:
 
+Example:
+
 ```bash
-python main.py
+torchrun --nproc_per_node=1 main.py --data_root "<path to dataset>" --ann_dir "<path to COCO annotations>" --batch_size 4 --epochs 15 --lr 1e-4 --decoder_model "Qwen/Qwen3-1.7B-Base"
 ```
 
 By default, the training logs and model checkpoints are saved in the `output/` directory.
-
-To specify a custom output directory:
-
-```bash
-python main.py --output_dir outputs
-```

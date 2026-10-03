@@ -10,3 +10,4 @@ complete_session_output.txt
 tmux-hist.txt
 gen_diff_3.txt
 generation_diff2.txt
+output-exp/
